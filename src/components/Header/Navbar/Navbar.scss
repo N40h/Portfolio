@@ -1,0 +1,54 @@
+@import "../../../utilities/mixins.scss";
+
+.header__navbar {
+    width: 100vw;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    opacity: 0;
+    transition: all 0.7s ease-out;
+    box-shadow: 0px 5px 10px 0px rgba(33, 31, 38, 0.2);
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(33, 31, 38, 0.2);
+
+    &--scrolled {
+        background: $sakura-white;
+        opacity: 1;
+    }
+
+    .navbar__wrapper {
+        width: auto;
+        padding: 1.5rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 5rem;
+        
+        .navbar__links {
+            height: 25px;
+            width: auto;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            letter-spacing: .1em;
+
+            &__link {
+                @include font(500, 0.8rem);
+                text-transform: uppercase;
+
+                a {
+                    color: $mauve-text;
+                    text-decoration: none;
+
+                    .active {
+                        text-decoration: underline 1px solid $mauve-text;
+                    }
+                    .navbar__contact {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

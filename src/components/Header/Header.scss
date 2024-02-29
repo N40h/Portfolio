@@ -1,0 +1,84 @@
+@import "../../utilities/variables.scss";
+@import "../../utilities/mixins.scss";
+@import "../../utilities/keyframes.scss";
+
+.header {
+    height: 100vh;
+    background: url(./img/japanese_temple_with_a_man_standing_in_front_of.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 70%;
+    position: relative;
+    background-color: $dark-background;
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    &__wrapper {
+        position: absolute;
+        top: 35%;
+        left: 6%;
+        color: $sakura-white;
+
+        .header__title {
+            @include font(400, 164px);
+            font-family: 'Viaoda Libre', sans-serif;
+        }
+
+        .header__description {
+            @include font(400, 1rem);
+            width: 60%;
+            line-height: 1.3;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        top: 75%;
+        left: 18%;
+        padding: 10px;
+
+        &__icon {
+            width: 25px;
+            height: 25px;
+
+            g, path {
+                fill: $sakura-white;
+            }
+        }
+    }
+
+    &__scroll {
+        width: 1.5rem;
+        height: 2.25rem;
+        border: solid 2px $sakura-white;
+        border-radius: 30px;
+        position: relative;
+        position: absolute;
+        left: 50%;
+        bottom: 3%;
+
+        &::before {
+            content: '';
+            width: 0.4rem;
+            height: 0.4rem;
+            border-radius: 50%;
+            background: $sakura-white;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: scroll 2.5s infinite;
+        }
+    }
+}

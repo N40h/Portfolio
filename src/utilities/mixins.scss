@@ -1,0 +1,18 @@
+@import "./variables.scss";
+
+@mixin font ($weight: 400, $size: 1rem) {
+    font-weight: $weight;
+    font-size: $size;
+}
+
+@mixin tablet {
+    @media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (min-width: 320px) and (max-width: $breakpoint-mobile) {
+        @content;
+    }
+}

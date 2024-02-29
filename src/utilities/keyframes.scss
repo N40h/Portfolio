@@ -1,0 +1,12 @@
+@keyframes scroll {
+    0% {
+        top: 10%;
+        bottom: 80%;
+        opacity: 1;
+    }
+    100% {
+        top: 80%;
+        bottom: 20%;
+        opacity: 0;
+    }
+}

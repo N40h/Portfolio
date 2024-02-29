@@ -1,0 +1,17 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+body {
+    margin: auto;
+    font-family: 'Numans', sans-serif;
+    background: $sakura-white;
+    color: $mauve-text;
+    box-sizing: border-box;
+}
+
+#root {
+    // max-width: 1440px;
+    min-height: 100vh;
+    margin: auto;
+    box-sizing: border-box;
+}
