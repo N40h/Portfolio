@@ -10,3 +10,9 @@
         opacity: 0;
     }
 }
+
+@keyframes scroller {
+    to {
+        transform: translate(calc(-50% - .5rem));
+    }
+}

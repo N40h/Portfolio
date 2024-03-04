@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 30px;
     padding: 25px;
     margin: 64px auto;
     max-width: 1160px;
@@ -15,10 +14,13 @@
         align-items: center;
 
         .about__image {
-            width: 350px;
+            width: 250px;
             height: 350px;
-            border-radius: 10px;
+            border-radius: 5px;
             object-fit: cover;
+            object-position: 63% 0%;
+            box-shadow: $shadow;
+            -webkit-box-shadow: $shadow;
         }
     }
 
@@ -47,12 +49,35 @@
             justify-content: center;
             align-items: center;
             background: $cherry-blossom-pink;
-            border: 3px solid $mauve-text;
+            box-shadow: $shadow;
+            border: 2px solid $mauve-text;
             border-radius: 5px;
             padding: 10px;
             color: $mauve-text;
             text-decoration: none;
             margin-top: 15px;
+            position: relative;
+            z-index: 1;
+
+            &:hover {
+                &::after {
+                    opacity: 1;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: $cherry-blossom-pink-hover;
+                box-shadow: $shadow-hover;
+                opacity: 0;
+                z-index: -1;
+                transition: opacity 300ms ease-in-out 100ms;
+            }
         }
     }
 }

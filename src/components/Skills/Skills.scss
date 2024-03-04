@@ -1,0 +1,57 @@
+@import "../../utilities/mixins.scss";
+@import "../../utilities/variables.scss";
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    margin: 64px auto;
+    background: $mauve-text;
+    color: $sakura-white;
+
+    &__title {
+        font-family: 'Viaoda Libre', sans-serif;
+        @include font(400, 36px);
+        padding: 5px;
+    }
+
+    &__scroller {
+        max-width: 800px;
+        user-select: none;
+    }
+
+    &__scroller[data-animated=true] {
+        overflow: hidden;
+        -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+        mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+
+        .scroller__inner {
+            width: max-content;
+            flex-wrap: nowrap;
+            animation: scroller 40s linear infinite;
+        }
+    }
+
+    .scroller__inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 15px 0;
+    }
+
+    .skills__tags__tag {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        width: 20%;
+
+        .tag__icon {
+            height: 50px;
+        }
+    }
+}
+

@@ -1,0 +1,46 @@
+[
+    {
+        "name": "HTML",
+        "icon": "/img/html.svg"
+    },
+    {
+        "name": "CSS",
+        "icon": "/img/css.svg"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "/img/javascript.svg"
+    },
+    {
+        "name": "React",
+        "icon": "/img/react.svg"
+    },
+    {
+        "name": "Sass",
+        "icon": "/img/sass.svg"
+    },
+    {
+        "name": "Redux",
+        "icon": "/img/redux.svg"
+    },
+    {
+        "name": "Swagger",
+        "icon": "/img/swagger.svg"
+    },
+    {
+        "name": "Git",
+        "icon": "/img/git.svg"
+    },
+    {
+        "name": "Github",
+        "icon": "/img/github.svg"
+    },
+    {
+        "name": "Figma",
+        "icon": "/img/figma.svg"
+    },
+    {
+        "name": "VSCode",
+        "icon": "/img/vscode.svg"
+    }
+]
