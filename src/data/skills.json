@@ -1,46 +1,46 @@
 [
     {
         "name": "HTML",
-        "icon": "/img/html.svg"
+        "icon": "/img/icons/html.svg"
     },
     {
         "name": "CSS",
-        "icon": "/img/css.svg"
+        "icon": "/img/icons/css.svg"
     },
     {
         "name": "JavaScript",
-        "icon": "/img/javascript.svg"
+        "icon": "/img/icons/javascript.svg"
     },
     {
         "name": "React",
-        "icon": "/img/react.svg"
+        "icon": "/img/icons/react.svg"
     },
     {
         "name": "Sass",
-        "icon": "/img/sass.svg"
+        "icon": "/img/icons/sass.svg"
     },
     {
         "name": "Redux",
-        "icon": "/img/redux.svg"
+        "icon": "/img/icons/redux.svg"
     },
     {
         "name": "Swagger",
-        "icon": "/img/swagger.svg"
+        "icon": "/img/icons/swagger.svg"
     },
     {
         "name": "Git",
-        "icon": "/img/git.svg"
+        "icon": "/img/icons/git.svg"
     },
     {
         "name": "Github",
-        "icon": "/img/github.svg"
+        "icon": "/img/icons/github.svg"
     },
     {
         "name": "Figma",
-        "icon": "/img/figma.svg"
+        "icon": "/img/icons/figma.svg"
     },
     {
         "name": "VSCode",
-        "icon": "/img/vscode.svg"
+        "icon": "/img/icons/vscode.svg"
     }
 ]

@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "Shoppy"
+    },
+    {
+        "id": 2,
+        "title": "Argent Bank",
+        "client": "Argent Bank",
+        "presentation": "Argent Bank is a new online bank that aims to break into the banking sector",
+        "objectives": "My goal was to set up the user dashboard using React along with an authentication system using JWT (JSON Web Tokens) for secure API calls. Additionally, I implemented data management through Redux, enabling users to retrieve their information upon logging in and allowing them to modify certain details if desired. I was also involved for defining routes for transactions in the Swagger editor, which involved selecting appropriate HTTP methods such as GET, PUT, or DELETE. Furthermore, I contributed to Green Code initiatives by creating reusable components to encourage best development practices.",
+        "repository": "https://github.com/N40h/Argent-Bank",
+        "tags": ["React", "Redux", "GreenCode", "JWT", "Swagger", "MongoDB", "API"],
+        "mockup_desktop": "/img/mockup/mockup_argentbank_800.webp",
+        "mockup_responsive": "/img/mockup/mockup_argentbank_small_500.webp",
+        "banner": "/img/banner/banner_argentbank.png"
+    },
+    {
+        "id": 3,
+        "title": "Kasa",
+        "client": "Kasa",
+        "presentation": "Kasa has been in the business of renting apartments between individuals for nearly 10 years. With over 500 listings posted each day, Kasa is one of the leaders in private apartment rentals in France.",
+        "objectives": "My objective was to lead a comprehensive overhaul of the website, which involved transitioning from ASP.NET to a modern JavaScript stack. Specifically, I focused on the front-end development using React, based on mock-ups provided by the designer, and integrated additional functionalities into the site.",
+        "repository": "https://github.com/N40h/Kasa",
+        "url": "https://kasa-n40h.netlify.app/",
+        "tags": ["React", "Sass", "Responsive", "Figma", "Animation"],
+        "mockup_desktop": "/img/mockup/mockup_kasa_800.webp",
+        "mockup_responsive": "/img/mockup/mockup_kasa_small_500.webp",
+        "banner": "/img/banner/banner_kasa.png"
+    },
+    {
+        "id": 4,
+        "title": "Sophie Bluel",
+        "client": "Agence ArchiWebos - Sophie Bluel",
+        "presentation": "I was sent as reinforcement as a front-end developer to a team working on the design of the portfolio website for an interior architect.",
+        "objectives": "My role was to develop the page showcasing the architect's work, incorporating filtering options to sort projects by category. Additionally, I was responsible for creating the secure login page for the administrator, implementing JWT (JSON Web Tokens) for authentication. Furthermore, I needed to design a modal for the architect to add or delete projects. JavaScript was utilized to dynamically generate elements by communicating with an API, allowing for the retrieval, addition and deletion of work items.",
+        "repository": "https://github.com/N40h/Portfolio_Sophie_Bluel",
+        "tags": ["HTML5", "CSS3", "JavaScript", "Figma", "JWT", "Swagger", "API"],
+        "mockup_desktop": "/img/mockup/mockup_sophie_bluel_800.webp",
+        "mockup_responsive": "/img/mockup/mockup_sophie_bluel_small_500.webp",
+        "banner": "/img/banner/banner_sophie_bluel.png"
+    },
+    {
+        "id": 5,
+        "title": "OhMyFood"
+    },
+    {
+        "id": 6,
+        "title": "Nina Carducci"
+    },
+    {
+        "id": 7,
+        "title": "724-Events"
+    },
+    {
+        "id": 8,
+        "title": "Booki",
+        "client": "Booki",
+        "presentation": "The company aims to develop a website that enables users to find accommodations and activities in the city of their choice.",
+        "objectives": "My goal was to integrate the website interface using HTML and CSS while adhering to the mockups provided by the UX/UI designer. Additionally, I have been provided with a summary note outlining the specifications and technical constraints to be followed. The website needed to be responsive and compatible with the latest versions of the main browsers.",
+        "repository": "https://github.com/N40h/Booki",
+        "url": "https://n40h.github.io/Booki/",
+        "tags": ["HTML5", "CSS3", "Responsive", "Figma"],
+        "mockup_desktop": "/img/mockup/mockup_booki_800.webp",
+        "mockup_responsive": "/img/mockup/mockup_booki_small_500.webp",
+        "banner": "/img/banner/banner_booki.png"
+    },
+    {
+        "id": 9,
+        "title": "Etch-A-Sketch"
+    }
+]
