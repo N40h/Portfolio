@@ -1,7 +1,16 @@
 [
     {
         "id": 1,
-        "title": "Shoppy"
+        "title": "Shoppy",
+        "client": "Shoppy",
+        "presentation": "Shoppy is a simple shopping list application.",
+        "objectives": "The goal was to develop a shopping list application using a MERN stack. The application itself is a user-friendly online tool designed to help users organize and manage their shopping needs. With its intuitive interface and simple features, users can easily add, remove, and track anything they need.",
+        "repository": "https://github.com/N40h/Shoppy",
+        "url": "https://shoppy-live.netlify.app/",
+        "tags": ["React", "Redux", "MongoDB", "Express", "Node.js", "MERN", "API"],
+        "mockup_desktop": "/img/mockup/mockup_shoppy_800.webp",
+        "mockup_responsive": "/img/mockup/mockup_shoppy_small_500.webp",
+        "banner": "/img/banner/banner_shoppy.png"
     },
     {
         "id": 2,
@@ -42,15 +51,42 @@
     },
     {
         "id": 5,
-        "title": "OhMyFood"
+        "title": "OhMyFood",
+        "client": "OhMyFood",
+        "presentation": "OhMyFood is a young startup aiming to establish itself in the restaurant market. Already present in New York, it now aims to make its mark in Paris.",
+        "objectives": "My mission was to develop a 'mobile-first' website that lists menus from gourmet restaurants. In addition to the traditional reservation systems, customers will be able to compose their meal menu so that the dishes are ready upon their arrival. The website will initially contain 4 menus.",
+        "repository": "https://github.com/N40h/OhMyFood",
+        "url": "https://n40h.github.io/OhMyFood/",
+        "tags": ["HTML5", "Sass", "Responsive", "Animation", "Figma"],
+        "mockup_desktop": "/img/mockup/mockup_ohmyfood_800.webp",
+        "mockup_responsive": "/img/mockup/mockup_ohmyfood_small_500.webp",
+        "banner": "/img/banner/banner_ohmyfood.png"
     },
     {
         "id": 6,
-        "title": "Nina Carducci"
+        "title": "Nina Carducci",
+        "client": "Nina Carducci",
+        "presentation": "Nina Carducci is the website of a professional photographer specializing in portraits and event photography. The purpose of the site is to showcase the photographer's portfolio and highlight her achievements.",
+        "objectives": "My goal was the optimize the SEO and performance of the website. My intervention included optimizing images, redesigning the code and structure of the site, implementing local SEO with Schema.org, and adding meta tags for social media. Additionally, I integrated Rich Snippets for better visibility on search engines and conducted an analysis with Wave to ensure optimal accessibility.",
+        "repository": "https://github.com/N40h/Nina-Carducci",
+        "url": "https://n40h.github.io/Nina-Carducci/",
+        "tags": ["Web Optimization", "SEO", "Local SEO", "Rich Snippets", "Wave", "Lighthouse", "Accessibility"],
+        "mockup_desktop": "/img/mockup/mockup_nina_carducci_800.webp",
+        "mockup_responsive": "/img/mockup/mockup_nina_carducci_small_500.webp",
+        "banner": "/img/banner/banner_nina_carducci.png"
     },
     {
         "id": 7,
-        "title": "724-Events"
+        "title": "724-Events",
+        "client": "724-Events",
+        "presentation": "724-Events is an event agency that offers specialized services in the design and organization of various events, including festive occasions, sports and cultural events, as well as professional gatherings.",
+        "objectives": "The agency had initiated a redesign of its showcase website. After design approval, a freelance developer was hired for integration, but had to leave the project midway, leaving some bugs unresolved. My mission was to complete the job and perform a comprehensive debugging and optimization of the website. This involved analyzing the existing source code and identifying technical issues. I used unit testing to verify each component of the site, with React Dev Tools proving essential for analyzing and optimizing the React code. By combining these tools, I was able to target specific areas requiring improvement. Additionally, I finalized the recipe book, creating detailed scenarios to verify that each feature worked as intended.",
+        "repository": "https://github.com/N40h/724-Events",
+        "url": "https://724events-n40h.netlify.app/",
+        "tags": ["Debugging", "Optimization", "Unit Testing", "Jest", "React Dev Tools"],
+        "mockup_desktop": "/img/mockup/mockup_724events_800.webp",
+        "mockup_responsive": "/img/mockup/mockup_724events_small_500.webp",
+        "banner": "/img/banner/banner_724events.png"
     },
     {
         "id": 8,
@@ -64,9 +100,5 @@
         "mockup_desktop": "/img/mockup/mockup_booki_800.webp",
         "mockup_responsive": "/img/mockup/mockup_booki_small_500.webp",
         "banner": "/img/banner/banner_booki.png"
-    },
-    {
-        "id": 9,
-        "title": "Etch-A-Sketch"
     }
 ]
