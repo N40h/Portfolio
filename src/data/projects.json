@@ -7,10 +7,10 @@
         "objectives": "The goal was to develop a shopping list application using a MERN stack. The application itself is a user-friendly online tool designed to help users organize and manage their shopping needs. With its intuitive interface and simple features, users can easily add, remove, and track anything they need.",
         "repository": "https://github.com/N40h/Shoppy",
         "url": "https://shoppy-live.netlify.app/",
-        "tags": ["React", "Redux", "MongoDB", "Express", "Node.js", "MERN", "API"],
+        "tags": ["React", "Redux", "MongoDB", "Express", "Node.js", "M.E.R.N", "API"],
         "mockup_desktop": "/img/mockup/mockup_shoppy_800.webp",
         "mockup_responsive": "/img/mockup/mockup_shoppy_small_500.webp",
-        "banner": "/img/banner/banner_shoppy.png"
+        "banner": "/img/banner/banner_shoppy.webp"
     },
     {
         "id": 2,
@@ -22,7 +22,7 @@
         "tags": ["React", "Redux", "GreenCode", "JWT", "Swagger", "MongoDB", "API"],
         "mockup_desktop": "/img/mockup/mockup_argentbank_800.webp",
         "mockup_responsive": "/img/mockup/mockup_argentbank_small_500.webp",
-        "banner": "/img/banner/banner_argentbank.png"
+        "banner": "/img/banner/banner_argentbank.webp"
     },
     {
         "id": 3,
@@ -35,7 +35,7 @@
         "tags": ["React", "Sass", "Responsive", "Figma", "Animation"],
         "mockup_desktop": "/img/mockup/mockup_kasa_800.webp",
         "mockup_responsive": "/img/mockup/mockup_kasa_small_500.webp",
-        "banner": "/img/banner/banner_kasa.png"
+        "banner": "/img/banner/banner_kasa.webp"
     },
     {
         "id": 4,
@@ -47,7 +47,7 @@
         "tags": ["HTML5", "CSS3", "JavaScript", "Figma", "JWT", "Swagger", "API"],
         "mockup_desktop": "/img/mockup/mockup_sophie_bluel_800.webp",
         "mockup_responsive": "/img/mockup/mockup_sophie_bluel_small_500.webp",
-        "banner": "/img/banner/banner_sophie_bluel.png"
+        "banner": "/img/banner/banner_sophie_bluel.webp"
     },
     {
         "id": 5,
@@ -60,7 +60,7 @@
         "tags": ["HTML5", "Sass", "Responsive", "Animation", "Figma"],
         "mockup_desktop": "/img/mockup/mockup_ohmyfood_800.webp",
         "mockup_responsive": "/img/mockup/mockup_ohmyfood_small_500.webp",
-        "banner": "/img/banner/banner_ohmyfood.png"
+        "banner": "/img/banner/banner_ohmyfood.webp"
     },
     {
         "id": 6,
@@ -73,7 +73,7 @@
         "tags": ["Web Optimization", "SEO", "Local SEO", "Rich Snippets", "Wave", "Lighthouse", "Accessibility"],
         "mockup_desktop": "/img/mockup/mockup_nina_carducci_800.webp",
         "mockup_responsive": "/img/mockup/mockup_nina_carducci_small_500.webp",
-        "banner": "/img/banner/banner_nina_carducci.png"
+        "banner": "/img/banner/banner_nina_carducci.webp"
     },
     {
         "id": 7,
@@ -86,7 +86,7 @@
         "tags": ["Debugging", "Optimization", "Unit Testing", "Jest", "React Dev Tools"],
         "mockup_desktop": "/img/mockup/mockup_724events_800.webp",
         "mockup_responsive": "/img/mockup/mockup_724events_small_500.webp",
-        "banner": "/img/banner/banner_724events.png"
+        "banner": "/img/banner/banner_724events.webp"
     },
     {
         "id": 8,
@@ -99,6 +99,6 @@
         "tags": ["HTML5", "CSS3", "Responsive", "Figma"],
         "mockup_desktop": "/img/mockup/mockup_booki_800.webp",
         "mockup_responsive": "/img/mockup/mockup_booki_small_500.webp",
-        "banner": "/img/banner/banner_booki.png"
+        "banner": "/img/banner/banner_booki.webp"
     }
 ]
