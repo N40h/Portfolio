@@ -1,0 +1,19 @@
+@import "../../utilities/variables.scss";
+@import "../../utilities/mixins.scss";
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background: $mauve-text;
+    color: $sakura-white;
+    padding: 20px;
+    @include font(400, 14px);
+
+    &__copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

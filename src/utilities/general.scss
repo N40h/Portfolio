@@ -15,3 +15,28 @@ body {
     margin: auto;
     box-sizing: border-box;
 }
+
+.arrow__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: $mauve-text;
+    font-size: 24px;
+    background: $cherry-blossom-pink;
+    border-radius: 50%;
+    box-shadow: $shadow;
+    z-index: 1000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.underline {
+    width: 80%;
+    margin: 0 auto;
+    height: 1px;
+    background: $mauve-text;
+}

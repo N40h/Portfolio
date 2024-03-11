@@ -54,7 +54,7 @@ export default function Projects() {
                 closeModal={closeModal}
             />
             {numProjectsToShow < ProjectsData.length && (
-                <button className="projects__btn" onClick={showAllProjects}>See more projects</button>
+                <button className="projects__cta" onClick={showAllProjects}>See more projects</button>
             )}
         </section>
     )

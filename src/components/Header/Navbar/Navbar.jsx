@@ -7,7 +7,6 @@ import "./Navbar.scss";
 
 export default function Navbar({ className }) {
     const [scrolled, setScrolled] = useState(false);
-    const [activeSection, setActiveSection] = useState("");
 
     const handleScroll = () => {
         const offset = window.scrollY;
@@ -15,27 +14,18 @@ export default function Navbar({ className }) {
             setScrolled(true);
         } else {
             setScrolled(false);
-            setActiveSection("");
         }
+    }
+
+    const handleClick = (e, id) => {
+        e.preventDefault();
+        const element = document.getElementById(id);
+        window.scrollTo({ top: element.offsetTop - 98, behavior: "smooth" });
     }
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll)
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && entry.boundingClientRect.top >= 0) {
-                    setActiveSection(entry.target.id);
-                }
-            })
-        }, { threshold: 0.8 });
-
-        const sections = document.querySelectorAll("section");
-        sections.forEach(section => observer.observe(section));
-        
-        return () => {
-            sections.forEach(section => observer.unobserve(section));
-        }
-    }, [setActiveSection, activeSection]);
+    })
 
     let navbarClasses = [`${className}`];
     if (scrolled) {
@@ -50,16 +40,16 @@ export default function Navbar({ className }) {
                 </a>
                 <ul className="navbar__links">
                     <li className="navbar__links__link">
-                        <a href="#about" className={activeSection === "about" ? 'active' : ''}>About</a>
+                        <a onClick={(e) => handleClick(e, 'about')}>About</a>
                     </li>
                     <li className="navbar__links__link">
-                        <a href="#skills" className={activeSection === "skills" ? 'active' : ''}>Skills</a>
+                        <a onClick={(e) => handleClick(e, 'skills')}>Skills</a>
                     </li>
                     <li className="navbar__links__link">
-                        <a href="#projects" className={activeSection === "projects" ? 'active' : ''}>My Projects</a>
+                        <a onClick={(e) => handleClick(e, 'projects')}>My Projects</a>
                     </li>
                     <li className="navbar__links__link">
-                        <a href="#contact" title="contact" className={activeSection === "contact" ? 'active' : ''}>
+                        <a onClick={(e) => handleClick(e, 'contact')} title="contact">
                             <FontAwesomeIcon icon={faEnvelope} className="navbar__contact" aria-hidden="false"/>
                         </a>
                     </li>
