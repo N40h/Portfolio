@@ -2,15 +2,18 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import Logo from "../Logo/Logo";
 import "./Navbar.scss";
 
 export default function Navbar({ className }) {
     const [scrolled, setScrolled] = useState(false);
+    const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
 
     const handleScroll = () => {
         const offset = window.scrollY;
-        if (offset > 50) {
+        if (offset > 50 || window.innerWidth <= 768) {
             setScrolled(true);
         } else {
             setScrolled(false);
@@ -23,9 +26,13 @@ export default function Navbar({ className }) {
         window.scrollTo({ top: element.offsetTop - 98, behavior: "smooth" });
     }
 
+    const handleBurgerMenu = () => {
+        setIsBurgerMenuOpen(!isBurgerMenuOpen);
+    }
+
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
-    })
+        window.addEventListener('scroll', handleScroll);
+    }, []);
 
     let navbarClasses = [`${className}`];
     if (scrolled) {
@@ -38,7 +45,13 @@ export default function Navbar({ className }) {
                 <a href="/" className="navbar__logo">
                     <Logo />
                 </a>
-                <ul className="navbar__links">
+                <div className="navbar__burger-menu" onClick={handleBurgerMenu}>
+                    {isBurgerMenuOpen
+                        ? <FontAwesomeIcon icon={faXmark} />
+                        : <FontAwesomeIcon icon={faBars} />
+                    }
+                </div>
+                <ul className={`navbar__links ${isBurgerMenuOpen ? 'open' : ''}`}>
                     <li className="navbar__links__link">
                         <a onClick={(e) => handleClick(e, 'about')}>About</a>
                     </li>
@@ -50,7 +63,8 @@ export default function Navbar({ className }) {
                     </li>
                     <li className="navbar__links__link">
                         <a onClick={(e) => handleClick(e, 'contact')} title="contact">
-                            <FontAwesomeIcon icon={faEnvelope} className="navbar__contact" aria-hidden="false"/>
+                            <FontAwesomeIcon icon={faEnvelope} className="navbar__contact-icon" aria-hidden="false" />
+                            <span className="navbar__contact-text">Contact</span>
                         </a>
                     </li>
                 </ul>

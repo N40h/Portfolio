@@ -9,7 +9,7 @@
     background: $mauve-text;
     color: $sakura-white;
     padding: 20px;
-    @include font(400, 14px);
+    @include font(400, 0.875rem);
 
     &__copyright {
         display: flex;

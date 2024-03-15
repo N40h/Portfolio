@@ -6,39 +6,81 @@
     padding: 64px;
     margin: 25px auto 0 auto;
 
+    @include tablet {
+        padding: 48px;
+        max-width: none;
+    }
+
+    @include mobile {
+        padding: 32px;
+        max-width: none;
+    }
+
     &__title {
         font-family: 'Viaoda Libre', sans-serif;
-        @include font(400, 36px);
+        @include font(400, 2.25rem);
         padding: 5px;
         display: flex;
         justify-content: center;
+
+        @include tablet {
+            @include font(400, 2rem);
+        }
+
+        @include mobile {
+            @include font(400, 2rem);
+        }
     }
 
     &__content {
         display: flex;
         justify-content: center;
-        gap: 64px;
     }
 
     &__form {
         width: 60%;
         margin: 48px 0;
 
+        @include tablet {
+            width: 80%;
+        }
+
+        @include mobile {
+            width: 90%;
+        }
+
         &__inputs {
             display: flex;
             gap: 50px;
+
+            @include tablet {
+                gap: 35px;
+            }
+
+            @include mobile {
+                flex-direction: column;
+                gap: 0px;
+            }
         }
 
         &__input {
             width: 50%;
 
+            @include mobile {
+                width: 100%;
+            }
+
             .input__wrapper {
                 position: relative;
                 margin-bottom: 60px;
 
+                @include mobile {
+                    margin-bottom: 42px;
+                }
+
                 label {
                     display: inline-block;
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -47,7 +89,8 @@
 
                 input {
                     width: 100%;
-                    font-size: 14px;
+                    font-family: inherit;
+                    font-size: 0.875rem;
                     padding: 8px;
                     background: transparent;
                     border-style: solid;
@@ -56,6 +99,14 @@
                     border-left-width: 0;
                     border-right-width: 0;
                     outline: transparent;
+
+                    @include tablet {
+                        width: 95%;
+                    }
+
+                    @include mobile {
+                        width: 95%;
+                    }
 
                     &:focus + label,
                     &:not(:placeholder-shown) + label {
@@ -70,9 +121,13 @@
                 position: relative;
                 margin-bottom: 60px;
 
+                @include mobile {
+                    margin-bottom: 42px;
+                }
+
                 label {
                     display: inline-block;
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -82,7 +137,8 @@
                 textarea {
                     width: 100%;
                     height: 150px;
-                    font-size: 14px;
+                    font-family: inherit;
+                    font-size: 0.875rem;
                     padding: 8px;
                     background: transparent;
                     border-style: solid;
@@ -92,6 +148,14 @@
                     border-right-width: 0;
                     outline: transparent;
                     resize: none;
+
+                    @include tablet {
+                        width: 95%;
+                    }
+
+                    @include mobile {
+                        width: 95%;
+                    }
 
                     &:focus + label,
                     &:not(:placeholder-shown) + label {
@@ -104,6 +168,8 @@
         &__cta {
             background: $cherry-blossom-pink;
             color: $mauve-text;
+            font-family: 'Numans', sans-serif;
+            @include font(500, 1rem);
             box-shadow: $shadow;
             border-radius: 5px;
             padding: 10px;
@@ -136,10 +202,13 @@
                 transition: opacity 300ms ease-in-out 100ms;
             }
         }
-    }
 
-    &__infos {
-        width: 40%;
-        margin: 48px 0;
+        .validated {
+            width: 100%;
+            font-size: 0.875rem;
+            padding: 5px;
+            margin: 20px auto;
+            text-align: center;
+        }
     }
 }

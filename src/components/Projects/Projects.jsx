@@ -41,9 +41,11 @@ export default function Projects() {
                                 <a href={project.repository} title={`Code of ${project.title}`} target="_blank" className="projects__card-link">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
-                                <a href={project.url} title={`Link to the site`} target="_blank" className="projects__card-link">
-                                    <FontAwesomeIcon icon={faLink} />
-                                </a>
+                                {project.url && (
+                                    <a href={project.url} title={`Link to the site`} target="_blank" className="projects__card-link">
+                                        <FontAwesomeIcon icon={faLink} />
+                                    </a>
+                                )}
                             </div>
                         </div>
                     </div>

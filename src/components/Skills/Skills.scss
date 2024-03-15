@@ -11,15 +11,42 @@
     background: $mauve-text;
     color: $sakura-white;
 
+    @include tablet {
+        gap: 15px;
+        padding: 48px;
+    }
+
+    @include mobile {
+        gap: 10px;
+        padding: 32px;
+    }
+
     &__title {
         font-family: 'Viaoda Libre', sans-serif;
-        @include font(400, 36px);
+        @include font(400, 2.25rem);
         padding: 5px;
+
+        @include tablet {
+            @include font(400, 2rem);
+        }
+
+        @include mobile {
+            @include font(400, 2rem);
+        }
     }
 
     &__scroller {
         max-width: 800px;
         user-select: none;
+
+        @include tablet {
+            max-width: 700px;
+        }
+
+        @include mobile {
+            max-width: 400px;
+            // max-width: 100%;
+        }
     }
 
     &__scroller[data-animated=true] {
@@ -49,8 +76,24 @@
         padding: 10px;
         width: 20%;
 
+        @include tablet {
+            @include font(400, 0.875rem);
+        }
+
+        @include mobile {
+            @include font(400, 0.875rem);
+        }
+
         .tag__icon {
             height: 50px;
+
+            @include tablet {
+                height: 45px;
+            }
+
+            @include mobile {
+                height: 40px;
+            }
         }
     }
 }
