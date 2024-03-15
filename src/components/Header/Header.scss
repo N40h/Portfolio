@@ -32,11 +32,11 @@
         color: $sakura-white;
 
         @include tablet {
-            width: 60%;
+            width: 65%;
         }
 
         @include mobile {
-            width: 70%;
+            width: 90%;
         }
 
         .header__title {
@@ -48,7 +48,7 @@
             }
 
             @include mobile {
-                @include font(400, 6.25rem);
+                @include font(400, 5.25rem);
             }
         }
 
