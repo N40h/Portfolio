@@ -5,7 +5,14 @@ export default function About() {
     return (
         <section className="about" id="about">
             <div className="about__image-wrapper">
-                <img src="/img/picture_of_a_bonsaï.jpg" alt="A picture of a bonsaï" className="about__image"></img>
+                <img
+                    className="about__image"
+                    src="/img/picture_of_a_bonsaï.webp"
+                    alt="A picture of a bonsaï"
+                    width={250}
+                    height={350}
+                    loading="lazy"
+                />
             </div>
             <div className="about__content-wrapper">
                 <h2 className="about__title">About Me</h2>

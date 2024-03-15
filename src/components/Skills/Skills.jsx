@@ -36,7 +36,7 @@ export default function Skills() {
                     {SkillsData.map((skill) => {
                         return (
                             <li className="skills__tags__tag" key={skill.name}>
-                                {skill.name} {skill.icon && <img className="tag__icon" src={skill.icon} alt={`${skill.name} icon`} />}
+                                {skill.name} {skill.icon && <img className="tag__icon" src={skill.icon} alt={`${skill.name} icon`} width={50} height={50} loading="lazy" />}
                             </li>
                         )
                     })}

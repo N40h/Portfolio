@@ -4,8 +4,6 @@ import About from "../../components/About/About";
 import Skills from "../../components/Skills/Skills";
 import Projects from "../../components/Projects/Projects";
 import Contact from "../../components/Contact/Contact";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
     const [showScrollToTop, setShowScrollToTop] = useState(false);
@@ -27,7 +25,7 @@ export default function Home() {
         <React.Fragment>
             {showScrollToTop && (
                 <div title="Go to the top of the page" className="arrow__top" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
-                    <FontAwesomeIcon icon={faChevronUp} />
+                    <i className="fa-solid fa-chevron-up"></i>
                 </div>
             )}
             <About />

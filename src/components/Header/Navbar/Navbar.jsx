@@ -1,9 +1,5 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import Logo from "../Logo/Logo";
 import "./Navbar.scss";
 
@@ -47,8 +43,8 @@ export default function Navbar({ className }) {
                 </a>
                 <div className="navbar__burger-menu" onClick={handleBurgerMenu}>
                     {isBurgerMenuOpen
-                        ? <FontAwesomeIcon icon={faXmark} />
-                        : <FontAwesomeIcon icon={faBars} />
+                        ? <i className="fa-solid fa-xmark"></i>
+                        : <i className="fa-solid fa-bars"></i>
                     }
                 </div>
                 <ul className={`navbar__links ${isBurgerMenuOpen ? 'open' : ''}`}>
@@ -63,7 +59,7 @@ export default function Navbar({ className }) {
                     </li>
                     <li className="navbar__links__link">
                         <a onClick={(e) => handleClick(e, 'contact')} title="contact">
-                            <FontAwesomeIcon icon={faEnvelope} className="navbar__contact-icon" aria-hidden="false" />
+                            <i className="navbar__contact-icon fa-solid fa-envelope" aria-hidden="false"></i>
                             <span className="navbar__contact-text">Contact</span>
                         </a>
                     </li>

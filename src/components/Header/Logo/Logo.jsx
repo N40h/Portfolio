@@ -3,9 +3,12 @@ import "./Logo.scss";
 export default function Logo() {
     return (
         <img
-            src="/img/marc_villevieille_logo.png"
+            className="logo__image"
+            src="/img/marc_villevieille_logo.webp"
             alt="Logo"
-            className="logo__image">
-        </img>
+            width={50}
+            height={50}
+            loading="lazy"
+        />
     )
 }
