@@ -49,16 +49,16 @@ export default function Navbar({ className }) {
                 </div>
                 <ul className={`navbar__links ${isBurgerMenuOpen ? 'open' : ''}`}>
                     <li className="navbar__links__link">
-                        <a onClick={(e) => handleClick(e, 'about')}>About</a>
+                        <a href="#about" onClick={(e) => handleClick(e, 'about')}>About</a>
                     </li>
                     <li className="navbar__links__link">
-                        <a onClick={(e) => handleClick(e, 'skills')}>Skills</a>
+                        <a href="#skills" onClick={(e) => handleClick(e, 'skills')}>Skills</a>
                     </li>
                     <li className="navbar__links__link">
-                        <a onClick={(e) => handleClick(e, 'projects')}>My Projects</a>
+                        <a href="#projects" onClick={(e) => handleClick(e, 'projects')}>My Projects</a>
                     </li>
                     <li className="navbar__links__link">
-                        <a onClick={(e) => handleClick(e, 'contact')} title="contact">
+                        <a href="#contact" onClick={(e) => handleClick(e, 'contact')} title="contact">
                             <i className="navbar__contact-icon fa-solid fa-envelope" aria-hidden="false"></i>
                             <span className="navbar__contact-text">Contact</span>
                         </a>
