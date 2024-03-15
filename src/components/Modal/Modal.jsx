@@ -31,10 +31,13 @@ export default function Modal({ selectedProject, closeModal}) {
                                     Github Link
                                     <i className="fa-solid fa-up-right-from-square"></i>
                                 </a>
-                                <a href={selectedProject.url} title={`Link to the live site`} target="_blank" className="projects__infos__links__link">
-                                    Link to the site
-                                    <i className="fa-solid fa-up-right-from-square"></i>
-                                </a>
+                                {selectedProject.url && (
+                                    <a href={selectedProject.url} title={`Link to the live site`} target="_blank" className="projects__infos__links__link">
+                                        Link to the site
+                                        <i className="fa-solid fa-up-right-from-square"></i>
+                                    </a>
+                                )}
+                                
                             </div>
                         </div>
                     </div>
