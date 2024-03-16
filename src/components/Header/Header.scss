@@ -12,6 +12,14 @@
     position: relative;
     background-color: $dark-background;
 
+    @include tablet {
+        background-attachment: scroll;
+    }
+    
+    @include mobile {
+        background-attachment: scroll;
+    }
+
     &__overlay {
         position: absolute;
         top: 0;
