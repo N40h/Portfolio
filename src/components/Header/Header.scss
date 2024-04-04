@@ -47,6 +47,11 @@
             width: 90%;
         }
 
+        @media (max-width: 1024px) {
+            width: 60%;
+            top: 20%;
+        }
+
         .header__title {
             @include font(400, 10.25rem);
             font-family: 'Viaoda Libre', sans-serif;
@@ -57,6 +62,10 @@
 
             @include mobile {
                 @include font(400, 5.25rem);
+            }
+
+            @media (max-width: 1024px) {
+                @include font(400, 7.25rem);
             }
         }
 
