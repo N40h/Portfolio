@@ -1,6 +1,22 @@
-import { Inter } from 'next/font/google';
+import { Numans, Viaoda_Libre } from 'next/font/google';
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+config.autoAddCss = false;
+import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const numans = Numans({
+	weight: '400',
+	subsets: ['latin'],
+	variable: '--font-numans',
+	display: 'swap',
+});
+
+const viaodaLibre = Viaoda_Libre({
+	weight: '400',
+	subsets: ['latin'],
+	variable: '--font-viaoda-libre',
+	display: 'swap',
+});
 
 export const metadata = {
 	title: 'Create Next App',
@@ -10,7 +26,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>{children}</body>
+			<body
+				className={`${numans.variable} ${viaodaLibre.variable} m-auto bg-sakura-white text-mauve-text box-border`}
+			>
+				<div className="min-h-screen m-auto box-border">{children}</div>
+			</body>
 		</html>
 	);
 }
