@@ -1,30 +1,9 @@
 [
 	{
-		"id": 1,
-		"title": "Shoppy",
-		"client": "Shoppy",
-		"presentation": "Shoppy is a simple shopping list application.",
-		"objectives": "The goal was to develop a shopping list application using a MERN stack. The application itself is a user-friendly online tool designed to help users organize and manage their shopping needs. With its intuitive interface and simple features, users can easily add, remove, and track anything they need.",
-		"repository": "https://github.com/N40h/Shoppy",
-		"url": "https://shoppy-live.netlify.app/",
-		"tags": [
-			"React",
-			"Redux",
-			"MongoDB",
-			"Express",
-			"Node.js",
-			"M.E.R.N",
-			"API"
-		],
-		"mockup_desktop": "/img/mockup/mockup_shoppy_800.webp",
-		"mockup_responsive": "/img/mockup/mockup_shoppy_small_500.webp",
-		"banner": "/img/banner/banner_shoppy.webp"
-	},
-	{
 		"id": 2,
 		"title": "Argent Bank",
+		"year": "2023",
 		"client": "Argent Bank",
-		"presentation": "Argent Bank is a new online bank that aims to break into the banking sector",
 		"objectives": "My goal was to set up the user dashboard using React along with an authentication system using JWT (JSON Web Tokens) for secure API calls. Additionally, I implemented data management through Redux, enabling users to retrieve their information upon logging in and allowing them to modify certain details if desired. I was also involved for defining routes for transactions in the Swagger editor, which involved selecting appropriate HTTP methods such as GET, PUT, or DELETE. Furthermore, I contributed to Green Code initiatives by creating reusable components to encourage best development practices.",
 		"repository": "https://github.com/N40h/Argent-Bank",
 		"tags": [
@@ -36,28 +15,22 @@
 			"MongoDB",
 			"API"
 		],
-		"mockup_desktop": "/img/mockup/mockup_argentbank_800.webp",
-		"mockup_responsive": "/img/mockup/mockup_argentbank_small_500.webp",
-		"banner": "/img/banner/banner_argentbank.webp"
+		"mockup_desktop": "/img/mockup/mockup_argentbank_800.webp"
 	},
 	{
 		"id": 3,
 		"title": "Kasa",
-		"client": "Kasa",
-		"presentation": "Kasa has been in the business of renting apartments between individuals for nearly 10 years. With over 500 listings posted each day, Kasa is one of the leaders in private apartment rentals in France.",
+		"year": "2023",
 		"objectives": "My objective was to lead a comprehensive overhaul of the website, which involved transitioning from ASP.NET to a modern JavaScript stack. Specifically, I focused on the front-end development using React, based on mock-ups provided by the designer, and integrated additional functionalities into the site.",
 		"repository": "https://github.com/N40h/Kasa",
 		"url": "https://kasa-n40h.netlify.app/",
 		"tags": ["React", "Sass", "Responsive", "Figma", "Animation"],
-		"mockup_desktop": "/img/mockup/mockup_kasa_800.webp",
-		"mockup_responsive": "/img/mockup/mockup_kasa_small_500.webp",
-		"banner": "/img/banner/banner_kasa.webp"
+		"mockup_desktop": "/img/mockup/mockup_kasa_800.webp"
 	},
 	{
 		"id": 4,
 		"title": "Sophie Bluel",
-		"client": "Agence ArchiWebos - Sophie Bluel",
-		"presentation": "I was sent as reinforcement as a front-end developer to a team working on the design of the portfolio website for an interior architect.",
+		"year": "2023",
 		"objectives": "My role was to develop the page showcasing the architect's work, incorporating filtering options to sort projects by category. Additionally, I was responsible for creating the secure login page for the administrator, implementing JWT (JSON Web Tokens) for authentication. Furthermore, I needed to design a modal for the architect to add or delete projects. JavaScript was utilized to dynamically generate elements by communicating with an API, allowing for the retrieval, addition and deletion of work items.",
 		"repository": "https://github.com/N40h/Portfolio_Sophie_Bluel",
 		"tags": [
@@ -69,28 +42,22 @@
 			"Swagger",
 			"API"
 		],
-		"mockup_desktop": "/img/mockup/mockup_sophie_bluel_800.webp",
-		"mockup_responsive": "/img/mockup/mockup_sophie_bluel_small_500.webp",
-		"banner": "/img/banner/banner_sophie_bluel.webp"
+		"mockup_desktop": "/img/mockup/mockup_sophie_bluel_800.webp"
 	},
 	{
 		"id": 5,
 		"title": "OhMyFood",
-		"client": "OhMyFood",
-		"presentation": "OhMyFood is a young startup aiming to establish itself in the restaurant market. Already present in New York, it now aims to make its mark in Paris.",
+		"year": "2023",
 		"objectives": "My mission was to develop a 'mobile-first' website that lists menus from gourmet restaurants. In addition to the traditional reservation systems, customers will be able to compose their meal menu so that the dishes are ready upon their arrival. The website will initially contain 4 menus.",
 		"repository": "https://github.com/N40h/OhMyFood",
 		"url": "https://n40h.github.io/OhMyFood/",
 		"tags": ["HTML5", "Sass", "Responsive", "Animation", "Figma"],
-		"mockup_desktop": "/img/mockup/mockup_ohmyfood_800.webp",
-		"mockup_responsive": "/img/mockup/mockup_ohmyfood_small_500.webp",
-		"banner": "/img/banner/banner_ohmyfood.webp"
+		"mockup_desktop": "/img/mockup/mockup_ohmyfood_800.webp"
 	},
 	{
 		"id": 6,
 		"title": "Nina Carducci",
-		"client": "Nina Carducci",
-		"presentation": "Nina Carducci is the website of a professional photographer specializing in portraits and event photography. The purpose of the site is to showcase the photographer's portfolio and highlight her achievements.",
+		"year": "2024",
 		"objectives": "My goal was the optimize the SEO and performance of the website. My intervention included optimizing images, redesigning the code and structure of the site, implementing local SEO with Schema.org, and adding meta tags for social media. Additionally, I integrated Rich Snippets for better visibility on search engines and conducted an analysis with Wave to ensure optimal accessibility.",
 		"repository": "https://github.com/N40h/Nina-Carducci",
 		"url": "https://n40h.github.io/Nina-Carducci/",
@@ -103,15 +70,12 @@
 			"Lighthouse",
 			"Accessibility"
 		],
-		"mockup_desktop": "/img/mockup/mockup_nina_carducci_800.webp",
-		"mockup_responsive": "/img/mockup/mockup_nina_carducci_small_500.webp",
-		"banner": "/img/banner/banner_nina_carducci.webp"
+		"mockup_desktop": "/img/mockup/mockup_nina_carducci_800.webp"
 	},
 	{
 		"id": 7,
 		"title": "724-Events",
-		"client": "724-Events",
-		"presentation": "724-Events is an event agency that offers specialized services in the design and organization of various events, including festive occasions, sports and cultural events, as well as professional gatherings.",
+		"year": "2024",
 		"objectives": "The agency had initiated a redesign of its showcase website. After design approval, a freelance developer was hired for integration, but had to leave the project midway, leaving some bugs unresolved. My mission was to complete the job and perform a comprehensive debugging and optimization of the website. This involved analyzing the existing source code and identifying technical issues. I used unit testing to verify each component of the site, with React Dev Tools proving essential for analyzing and optimizing the React code. By combining these tools, I was able to target specific areas requiring improvement. Additionally, I finalized the recipe book, creating detailed scenarios to verify that each feature worked as intended.",
 		"repository": "https://github.com/N40h/724-Events",
 		"url": "https://724events-n40h.netlify.app/",
@@ -122,21 +86,16 @@
 			"Jest",
 			"React Dev Tools"
 		],
-		"mockup_desktop": "/img/mockup/mockup_724events_800.webp",
-		"mockup_responsive": "/img/mockup/mockup_724events_small_500.webp",
-		"banner": "/img/banner/banner_724events.webp"
+		"mockup_desktop": "/img/mockup/mockup_724events_800.webp"
 	},
 	{
 		"id": 8,
 		"title": "Booki",
-		"client": "Booki",
-		"presentation": "The company aims to develop a website that enables users to find accommodations and activities in the city of their choice.",
+		"year": "2023",
 		"objectives": "My goal was to integrate the website interface using HTML and CSS while adhering to the mockups provided by the UX/UI designer. Additionally, I have been provided with a summary note outlining the specifications and technical constraints to be followed. The website needed to be responsive and compatible with the latest versions of the main browsers.",
 		"repository": "https://github.com/N40h/Booki",
 		"url": "https://n40h.github.io/Booki/",
 		"tags": ["HTML5", "CSS3", "Responsive", "Figma"],
-		"mockup_desktop": "/img/mockup/mockup_booki_800.webp",
-		"mockup_responsive": "/img/mockup/mockup_booki_small_500.webp",
-		"banner": "/img/banner/banner_booki.webp"
+		"mockup_desktop": "/img/mockup/mockup_booki_800.webp"
 	}
 ]

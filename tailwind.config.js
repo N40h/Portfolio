@@ -19,6 +19,7 @@ module.exports = {
 				'mauve-text': '#211F26',
 				'cherry-blossom': '#FFB7C5',
 				overlay: 'rgba(0, 0, 0, 0.2)',
+				'modal-overlay': 'rgba(49, 49, 49, 0.8)',
 			},
 			backgroundImage: {
 				hero: "url('/img/japanese_temple_with_a_man_standing_in_front_of.webp')",

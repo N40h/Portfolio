@@ -4,6 +4,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import { useState } from 'react';
+import Modal from './Modal';
 
 export default function ProjectList() {
 	const [selectedProject, setSelectedProject] = useState(null);
@@ -30,7 +31,7 @@ export default function ProjectList() {
 					(project, index) => (
 						<a
 							key={project.id}
-							className={`relative h-72 translate-y-5 overflow-hidden rounded opacity-0 shadow-md transition-all duration-500 ease-linear lg:h-96 ${
+							className={`relative h-72 translate-y-5 overflow-hidden rounded opacity-0 shadow-xl transition-all duration-500 ease-linear lg:h-96 ${
 								index < 4 || showMoreClicked
 									? 'animate-fadeIn'
 									: ''
@@ -39,7 +40,7 @@ export default function ProjectList() {
 							<Image
 								className="size-full rounded object-cover transition-transform duration-300 ease-in-out"
 								src={project.mockup_desktop}
-								alt={project.title}
+								alt={`Mockup du site ${project.title}`}
 								width={580}
 								height={300}
 								sizes="(max-width: 500px) 500px, 800px"
@@ -54,27 +55,14 @@ export default function ProjectList() {
 									<FontAwesomeIcon icon={faArrowRight} />
 								</div>
 							</div>
-							<div>
-								{/* <div>
-							{project.url && (
-								<a
-									href={project.url}
-									title={`Lien vers le site`}
-									target="_blank"
-								>
-									<FontAwesomeIcon icon={faLink} />
-								</a>
-							)}
-						</div> */}
-							</div>
 						</a>
 					)
 				)}
 			</div>
-			{/* <Modal selectedProject={selectedProject} closeModal={closeModal} /> */}
+			<Modal selectedProject={selectedProject} closeModal={closeModal} />
 			{numProjectsToShow < ProjetsData.length && (
 				<button
-					className="mx-auto mb-0 mt-7 cursor-pointer rounded bg-cherry-blossom p-2 text-xs font-medium uppercase text-mauve-text shadow-md hover:bg-cherry-blossom/65 md:text-sm lg:text-base"
+					className="mx-auto mb-0 mt-7 cursor-pointer rounded bg-cherry-blossom p-2 text-xs font-medium uppercase text-mauve-text shadow-md transition-colors duration-500 hover:border hover:border-solid hover:border-zinc-700 hover:bg-transparent md:text-sm lg:text-base"
 					onClick={showAllProjects}
 				>
 					Voir plus de projets
