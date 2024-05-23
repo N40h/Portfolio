@@ -42,13 +42,11 @@ export default function Navbar() {
 	return (
 		<nav
 			className={`fixed left-0 top-0 z-100 w-screen shadow-md transition-all duration-700 ease-out ${
-				scrolled
-					? 'bg-neutral-100 opacity-100'
-					: 'bg-transparent opacity-0'
+				scrolled ? 'bg-whity opacity-100' : 'bg-transparent opacity-0'
 			}`}
 		>
 			<div className="relative block w-auto px-4 py-2 sm:px-6 sm:py-4 lg:mx-20 lg:flex lg:items-center lg:justify-between lg:px-8 lg:py-6">
-				<Link href="/">
+				<Link href="/" className="focus:outline-none">
 					<Logo />
 				</Link>
 				<div

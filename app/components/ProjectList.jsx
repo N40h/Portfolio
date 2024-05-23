@@ -26,7 +26,7 @@ export default function ProjectList() {
 
 	return (
 		<>
-			<div className="grid grid-cols-1 gap-7 md:grid-cols-2">
+			<div className="grid grid-cols-1 gap-8 md:grid-cols-2">
 				{ProjetsData.slice(0, numProjectsToShow).map(
 					(project, index) => (
 						<a
@@ -46,7 +46,7 @@ export default function ProjectList() {
 								sizes="(max-width: 500px) 500px, 800px"
 							/>
 							<div
-								className="absolute inset-0 flex size-full cursor-pointer items-center justify-center rounded bg-cherry-blossom/80 opacity-0 transition-opacity delay-100 duration-300 hover:opacity-100"
+								className="absolute inset-0 flex size-full cursor-pointer items-center justify-center rounded bg-sunny/90 opacity-0 transition-opacity delay-100 duration-300 hover:opacity-100"
 								onClick={() => openModal(project)}
 							>
 								<h3 className="text-xl">{`Front-end du site ${project.title}`}</h3>
@@ -62,7 +62,7 @@ export default function ProjectList() {
 			<Modal selectedProject={selectedProject} closeModal={closeModal} />
 			{numProjectsToShow < ProjetsData.length && (
 				<button
-					className="mx-auto mb-0 mt-7 cursor-pointer rounded bg-cherry-blossom p-2 text-xs font-medium uppercase text-mauve-text shadow-md transition-colors duration-500 hover:border hover:border-solid hover:border-zinc-700 hover:bg-transparent md:text-sm lg:text-base"
+					className="mx-auto mb-0 mt-7 cursor-pointer rounded bg-sunny px-4 py-2 text-xs font-medium uppercase text-darken shadow-md transition-all duration-500 hover:-translate-y-1 hover:shadow-xl md:text-sm lg:text-base"
 					onClick={showAllProjects}
 				>
 					Voir plus de projets

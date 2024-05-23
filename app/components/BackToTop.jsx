@@ -24,7 +24,7 @@ export default function BackToTop() {
 		<>
 			{showScrollToTop && (
 				<div
-					className="fixed bottom-5 right-5 z-1000 flex size-10 cursor-pointer items-center justify-center rounded-50% bg-cherry-blossom text-2xl text-mauve-text shadow-md"
+					className="fixed bottom-5 right-5 z-1000 flex size-10 cursor-pointer items-center justify-center rounded-50% bg-sunny text-2xl text-darken shadow-md"
 					title="Retour en haut de la page"
 					onClick={() =>
 						window.scrollTo({ top: 0, behavior: 'smooth' })

@@ -6,10 +6,10 @@ import SocialLinks from './SocialLinks';
 export default function About() {
 	return (
 		<section
-			className="flex flex-col items-center p-8 sm:p-12 lg:mx-auto lg:my-7 lg:max-w-6xl lg:p-16"
+			className="flex flex-col items-center p-12 sm:p-14 lg:mx-auto lg:my-7 lg:max-w-6xl lg:p-16"
 			id="about"
 		>
-			<div className="flex w-full flex-col items-center gap-3 p-2 lg:w-4/5 lg:gap-5">
+			<div className="flex w-full flex-col items-center gap-8 p-2 lg:w-4/5">
 				<h2
 					className={`${viaodaLibre.className} p-1 text-center text-3xl font-normal lg:text-4xl`}
 				>

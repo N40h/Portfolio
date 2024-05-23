@@ -10,20 +10,20 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				'dark-background': '#0D0C1D',
-				'mauve-text': '#211F26',
+				whity: '#f7f7f7',
+				darken: '#010101',
+				sunny: '#F1B9A2',
 				'cherry-blossom': '#FFB7C5',
 			},
 			backgroundColor: {
-				'dark-background': '#0D0C1D',
-				'mauve-text': '#211F26',
+				whity: '#f7f7f7',
+				darken: '#010101',
+				sunny: '#F1B9A2',
 				'cherry-blossom': '#FFB7C5',
-				overlay: 'rgba(0, 0, 0, 0.2)',
 				'modal-overlay': 'rgba(49, 49, 49, 0.8)',
 			},
 			backgroundImage: {
 				hero: "url('/img/japanese_temple_with_a_man_standing_in_front_of.webp')",
-				projects: "url('/img/animated_shape.svg')",
 			},
 			backgroundPosition: {
 				'50-70': '50% 70%',

@@ -1,3 +1,4 @@
+import Footer from '@/app/components/Footer';
 import Header from '@/app/components/Header';
 import { numans } from '@/app/ui/fonts';
 import '@/app/ui/globals.css';
@@ -14,12 +15,12 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="fr">
 			<body
-				className={`${numans.className} m-auto box-border bg-neutral-100 text-mauve-text antialiased`}
+				className={`${numans.className} m-auto box-border bg-whity text-darken antialiased`}
 			>
 				<div className="m-auto box-border min-h-screen">
 					<Header />
 					<main>{children}</main>
-					{/* <Footer /> */}
+					<Footer />
 				</div>
 			</body>
 		</html>

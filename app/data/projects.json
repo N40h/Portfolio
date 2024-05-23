@@ -4,8 +4,7 @@
 		"title": "Argent Bank",
 		"year": "2023",
 		"client": "Argent Bank",
-		"objectives": "My goal was to set up the user dashboard using React along with an authentication system using JWT (JSON Web Tokens) for secure API calls. Additionally, I implemented data management through Redux, enabling users to retrieve their information upon logging in and allowing them to modify certain details if desired. I was also involved for defining routes for transactions in the Swagger editor, which involved selecting appropriate HTTP methods such as GET, PUT, or DELETE. Furthermore, I contributed to Green Code initiatives by creating reusable components to encourage best development practices.",
-		"repository": "https://github.com/N40h/Argent-Bank",
+		"objectives": "Mon objectif était de mettre en place le tableau de bord utilisateur en utilisant React ainsi qu'un système d'authentification avec JWT (JSON Web Tokens) pour sécuriser les appels API. De plus, j'ai implémenté la gestion des données avec Redux, permettant aux utilisateurs de récupérer leurs informations lors de la connexion et de modifier certains détails si souhaité. J'ai également participé à la définition des routes pour les transactions dans l'éditeur Swagger, ce qui impliquait de sélectionner les méthodes HTTP appropriées telles que GET, PUT ou DELETE. En outre, j'ai contribué aux initiatives de Green Code en créant des composants réutilisables pour encourager les meilleures pratiques de développement.",
 		"tags": [
 			"React",
 			"Redux",
@@ -21,18 +20,20 @@
 		"id": 3,
 		"title": "Kasa",
 		"year": "2023",
-		"objectives": "My objective was to lead a comprehensive overhaul of the website, which involved transitioning from ASP.NET to a modern JavaScript stack. Specifically, I focused on the front-end development using React, based on mock-ups provided by the designer, and integrated additional functionalities into the site.",
-		"repository": "https://github.com/N40h/Kasa",
+		"objectives": "Mon objectif était de diriger une refonte complète du site web, ce qui impliquait de passer d'ASP.NET à une stack JavaScript moderne. Plus précisément, je me suis concentré sur le développement front-end en utilisant React, basé sur les maquettes fournies par le designer, et j'ai intégré des fonctionnalités supplémentaires au site.",
 		"url": "https://kasa-n40h.netlify.app/",
 		"tags": ["React", "Sass", "Responsive", "Figma", "Animation"],
-		"mockup_desktop": "/img/mockup/mockup_kasa_800.webp"
+		"mockup_desktop": "/img/mockup/mockup_kasa_800.webp",
+		"maquettes": [
+			"/img/maquettes/kasa_homepage_desktop.png",
+			"/img/maquettes/kasa_appartement_desktop.png"
+		]
 	},
 	{
 		"id": 4,
 		"title": "Sophie Bluel",
 		"year": "2023",
-		"objectives": "My role was to develop the page showcasing the architect's work, incorporating filtering options to sort projects by category. Additionally, I was responsible for creating the secure login page for the administrator, implementing JWT (JSON Web Tokens) for authentication. Furthermore, I needed to design a modal for the architect to add or delete projects. JavaScript was utilized to dynamically generate elements by communicating with an API, allowing for the retrieval, addition and deletion of work items.",
-		"repository": "https://github.com/N40h/Portfolio_Sophie_Bluel",
+		"objectives": "Mon rôle était de développer la page présentant le travail de l'architecte, en intégrant des options de filtrage pour trier les projets par catégorie. De plus, j'étais responsable de la création de la page de connexion sécurisée pour l'administrateur, en implémentant JWT (JSON Web Tokens) pour l'authentification. En outre, je devais concevoir une modale permettant à l'architecte d'ajouter ou de supprimer des projets. JavaScript a été utilisé pour générer dynamiquement des éléments en communiquant avec une API, permettant la récupération, l'ajout et la suppression d'éléments de travail.",
 		"tags": [
 			"HTML5",
 			"CSS3",
@@ -42,24 +43,30 @@
 			"Swagger",
 			"API"
 		],
-		"mockup_desktop": "/img/mockup/mockup_sophie_bluel_800.webp"
+		"mockup_desktop": "/img/mockup/mockup_sophie_bluel_800.webp",
+		"maquettes": [
+			"/img/maquettes/sophie_bluel_homepage_desktop.png",
+			"/img/maquettes/sophie_bluel_homepage_edit_desktop.png"
+		]
 	},
 	{
 		"id": 5,
 		"title": "OhMyFood",
 		"year": "2023",
-		"objectives": "My mission was to develop a 'mobile-first' website that lists menus from gourmet restaurants. In addition to the traditional reservation systems, customers will be able to compose their meal menu so that the dishes are ready upon their arrival. The website will initially contain 4 menus.",
-		"repository": "https://github.com/N40h/OhMyFood",
+		"objectives": "Ma mission était de développer un site web « mobile-first » qui liste les menus des restaurants gastronomiques. En plus des systèmes de réservation traditionnels, les clients pourront composer leur menu de repas afin que les plats soient prêts à leur arrivée. Le site web contiendra initialement 4 menus.",
 		"url": "https://n40h.github.io/OhMyFood/",
 		"tags": ["HTML5", "Sass", "Responsive", "Animation", "Figma"],
-		"mockup_desktop": "/img/mockup/mockup_ohmyfood_800.webp"
+		"mockup_desktop": "/img/mockup/mockup_ohmyfood_800.webp",
+		"maquettes": [
+			"/img/maquettes/ohmyfood_homepage_desktop.png",
+			"/img/maquettes/ohmyfood_menu_desktop.png"
+		]
 	},
 	{
 		"id": 6,
 		"title": "Nina Carducci",
 		"year": "2024",
-		"objectives": "My goal was the optimize the SEO and performance of the website. My intervention included optimizing images, redesigning the code and structure of the site, implementing local SEO with Schema.org, and adding meta tags for social media. Additionally, I integrated Rich Snippets for better visibility on search engines and conducted an analysis with Wave to ensure optimal accessibility.",
-		"repository": "https://github.com/N40h/Nina-Carducci",
+		"objectives": "Mon objectif était d'optimiser le référencement (SEO) et les performances du site web. Mon intervention a inclus l'optimisation des images, la refonte du code et de la structure du site, la mise en œuvre du SEO local avec Schema.org, et l'ajout de balises méta pour les réseaux sociaux. De plus, j'ai intégré des Rich Snippets pour une meilleure visibilité sur les moteurs de recherche et j'ai réalisé une analyse avec Wave pour assurer une accessibilité optimale.",
 		"url": "https://n40h.github.io/Nina-Carducci/",
 		"tags": [
 			"Web Optimization",
@@ -76,8 +83,7 @@
 		"id": 7,
 		"title": "724-Events",
 		"year": "2024",
-		"objectives": "The agency had initiated a redesign of its showcase website. After design approval, a freelance developer was hired for integration, but had to leave the project midway, leaving some bugs unresolved. My mission was to complete the job and perform a comprehensive debugging and optimization of the website. This involved analyzing the existing source code and identifying technical issues. I used unit testing to verify each component of the site, with React Dev Tools proving essential for analyzing and optimizing the React code. By combining these tools, I was able to target specific areas requiring improvement. Additionally, I finalized the recipe book, creating detailed scenarios to verify that each feature worked as intended.",
-		"repository": "https://github.com/N40h/724-Events",
+		"objectives": "L'agence avait initié une refonte de son site vitrine. Après l'approbation du design, un développeur freelance a été embauché pour l'intégration, mais a dû quitter le projet en cours de route, laissant certains bugs non résolus. Ma mission était de terminer le travail et de réaliser un débogage et une optimisation complètes du site web. Cela impliquait l'analyse du code source existant et l'identification des problèmes techniques. J'ai utilisé des tests unitaires pour vérifier chaque composant du site, les outils de développement React s'avérant essentiels pour analyser et optimiser le code React. En combinant ces outils, j'ai pu cibler des zones spécifiques nécessitant des améliorations. De plus, j'ai finalisé le livre de recettes, en créant des scénarios détaillés pour vérifier que chaque fonctionnalité fonctionnait comme prévu.",
 		"url": "https://724events-n40h.netlify.app/",
 		"tags": [
 			"Debugging",
@@ -92,10 +98,13 @@
 		"id": 8,
 		"title": "Booki",
 		"year": "2023",
-		"objectives": "My goal was to integrate the website interface using HTML and CSS while adhering to the mockups provided by the UX/UI designer. Additionally, I have been provided with a summary note outlining the specifications and technical constraints to be followed. The website needed to be responsive and compatible with the latest versions of the main browsers.",
-		"repository": "https://github.com/N40h/Booki",
+		"objectives": "Mon objectif était d'intégrer l'interface du site web en utilisant HTML et CSS tout en respectant les maquettes fournies par le designer UX/UI. De plus, on m'a fourni une note récapitulative décrivant les spécifications et les contraintes techniques à suivre. Le site web devait être responsive et compatible avec les dernières versions des principaux navigateurs.",
 		"url": "https://n40h.github.io/Booki/",
 		"tags": ["HTML5", "CSS3", "Responsive", "Figma"],
-		"mockup_desktop": "/img/mockup/mockup_booki_800.webp"
+		"mockup_desktop": "/img/mockup/mockup_booki_800.webp",
+		"maquettes": [
+			"/img/maquettes/booki_desktop.png",
+			"/img/maquettes/booki_tablet.png"
+		]
 	}
 ]

@@ -137,3 +137,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+input:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:focus + label,
+textarea:not(:placeholder-shown) + label {
+	@apply -top-5;
+}
