@@ -1,0 +1,36 @@
+{
+	"name": "Marc VILLEVIEILLE - Développeur Front-End",
+	"short_name": "Marc VILLEVIEILLE",
+	"description": "Développeur Front-End, spécialisé en React pour la création de sites web et d'applications web.",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#ffffff",
+	"icons": [
+		{
+			"src": "/favicon.ico",
+			"sizes": "any",
+			"type": "image/x-icon"
+		},
+		{
+			"src": "/icon1.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "/icon2.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "/icon3.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/icon4.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}

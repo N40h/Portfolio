@@ -1,6 +1,6 @@
 [
 	{
-		"id": 2,
+		"id": 1,
 		"title": "Argent Bank",
 		"year": "2023",
 		"client": "Argent Bank",
@@ -17,7 +17,7 @@
 		"mockup_desktop": "/img/mockup/mockup_argentbank_800.webp"
 	},
 	{
-		"id": 3,
+		"id": 2,
 		"title": "Kasa",
 		"year": "2023",
 		"objectives": "Mon objectif était de diriger une refonte complète du site web, ce qui impliquait de passer d'ASP.NET à une stack JavaScript moderne. Plus précisément, je me suis concentré sur le développement front-end en utilisant React, basé sur les maquettes fournies par le designer, et j'ai intégré des fonctionnalités supplémentaires au site.",
@@ -30,7 +30,7 @@
 		]
 	},
 	{
-		"id": 4,
+		"id": 3,
 		"title": "Sophie Bluel",
 		"year": "2023",
 		"objectives": "Mon rôle était de développer la page présentant le travail de l'architecte, en intégrant des options de filtrage pour trier les projets par catégorie. De plus, j'étais responsable de la création de la page de connexion sécurisée pour l'administrateur, en implémentant JWT (JSON Web Tokens) pour l'authentification. En outre, je devais concevoir une modale permettant à l'architecte d'ajouter ou de supprimer des projets. JavaScript a été utilisé pour générer dynamiquement des éléments en communiquant avec une API, permettant la récupération, l'ajout et la suppression d'éléments de travail.",
@@ -50,7 +50,7 @@
 		]
 	},
 	{
-		"id": 5,
+		"id": 4,
 		"title": "OhMyFood",
 		"year": "2023",
 		"objectives": "Ma mission était de développer un site web « mobile-first » qui liste les menus des restaurants gastronomiques. En plus des systèmes de réservation traditionnels, les clients pourront composer leur menu de repas afin que les plats soient prêts à leur arrivée. Le site web contiendra initialement 4 menus.",
@@ -63,7 +63,7 @@
 		]
 	},
 	{
-		"id": 6,
+		"id": 5,
 		"title": "Nina Carducci",
 		"year": "2024",
 		"objectives": "Mon objectif était d'optimiser le référencement (SEO) et les performances du site web. Mon intervention a inclus l'optimisation des images, la refonte du code et de la structure du site, la mise en œuvre du SEO local avec Schema.org, et l'ajout de balises méta pour les réseaux sociaux. De plus, j'ai intégré des Rich Snippets pour une meilleure visibilité sur les moteurs de recherche et j'ai réalisé une analyse avec Wave pour assurer une accessibilité optimale.",
@@ -80,7 +80,7 @@
 		"mockup_desktop": "/img/mockup/mockup_nina_carducci_800.webp"
 	},
 	{
-		"id": 7,
+		"id": 6,
 		"title": "724-Events",
 		"year": "2024",
 		"objectives": "L'agence avait initié une refonte de son site vitrine. Après l'approbation du design, un développeur freelance a été embauché pour l'intégration, mais a dû quitter le projet en cours de route, laissant certains bugs non résolus. Ma mission était de terminer le travail et de réaliser un débogage et une optimisation complètes du site web. Cela impliquait l'analyse du code source existant et l'identification des problèmes techniques. J'ai utilisé des tests unitaires pour vérifier chaque composant du site, les outils de développement React s'avérant essentiels pour analyser et optimiser le code React. En combinant ces outils, j'ai pu cibler des zones spécifiques nécessitant des améliorations. De plus, j'ai finalisé le livre de recettes, en créant des scénarios détaillés pour vérifier que chaque fonctionnalité fonctionnait comme prévu.",
@@ -95,7 +95,7 @@
 		"mockup_desktop": "/img/mockup/mockup_724events_800.webp"
 	},
 	{
-		"id": 8,
+		"id": 7,
 		"title": "Booki",
 		"year": "2023",
 		"objectives": "Mon objectif était d'intégrer l'interface du site web en utilisant HTML et CSS tout en respectant les maquettes fournies par le designer UX/UI. De plus, on m'a fourni une note récapitulative décrivant les spécifications et les contraintes techniques à suivre. Le site web devait être responsive et compatible avec les dernières versions des principaux navigateurs.",

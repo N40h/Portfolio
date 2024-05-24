@@ -6,7 +6,7 @@ import ServiceItem from './ServiceItem';
 export default function Services() {
 	return (
 		<section
-			className="flex flex-col items-center bg-beige/5 p-12 text-darken sm:p-14 lg:mx-auto lg:my-7 lg:p-16"
+			className="flex flex-col items-center p-12 text-darken sm:p-14 lg:mx-auto lg:my-7 lg:p-16"
 			id="services"
 		>
 			<div className="flex w-full flex-col gap-24 p-2 text-center sm:items-center md:items-center lg:gap-20">

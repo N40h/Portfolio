@@ -28,9 +28,6 @@ module.exports = {
 			backgroundPosition: {
 				'50-70': '50% 70%',
 			},
-			borderRadius: {
-				'50%': '50%',
-			},
 			zIndex: {
 				100: '100',
 				1000: '1000',

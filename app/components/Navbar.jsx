@@ -46,17 +46,25 @@ export default function Navbar() {
 			}`}
 		>
 			<div className="relative block w-auto px-4 py-2 sm:px-6 sm:py-4 lg:mx-20 lg:flex lg:items-center lg:justify-between lg:px-8 lg:py-6">
-				<Link href="/" className="focus:outline-none">
+				<Link
+					href="/"
+					className="inline-block size-[50px] focus:outline-none"
+				>
 					<Logo />
 				</Link>
-				<div
-					className="absolute right-4 top-4 block text-2xl sm:right-6 sm:top-6 lg:hidden lg:cursor-pointer"
-					onClick={handleBurgerMenu}
-				>
+				<div className="absolute right-4 top-4 block text-2xl sm:right-6 sm:top-6 lg:hidden">
 					{isBurgerMenuOpen ? (
-						<FontAwesomeIcon icon={faXmark} />
+						<FontAwesomeIcon
+							icon={faXmark}
+							onClick={handleBurgerMenu}
+							className="cursor-pointer"
+						/>
 					) : (
-						<FontAwesomeIcon icon={faBars} />
+						<FontAwesomeIcon
+							icon={faBars}
+							onClick={handleBurgerMenu}
+							className="cursor-pointer"
+						/>
 					)}
 				</div>
 				<ul
@@ -101,7 +109,7 @@ export default function Navbar() {
 					>
 						<FontAwesomeIcon
 							icon={faEnvelope}
-							className="hidden lg:inline-block lg:text-base"
+							className="inline-block lg:text-base"
 							aria-hidden="false"
 						/>
 					</NavItem>

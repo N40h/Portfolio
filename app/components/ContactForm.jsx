@@ -1,6 +1,8 @@
 'use client';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
+import Button from './Button';
+import Field, { FIELD_TYPES } from './Field';
 emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_API_KEY);
 
 export default function ContactForm() {
@@ -56,120 +58,78 @@ export default function ContactForm() {
 		>
 			<div className="flex flex-col md:flex-row md:gap-9 lg:gap-14">
 				<div className="w-full lg:w-1/2">
-					<div className="relative mb-11 lg:mb-16">
-						<input
-							className="w-[95%] border-x-0 border-b border-t-0 border-solid border-darken bg-transparent p-2 text-sm outline-none lg:w-full"
-							type="text"
-							id="name"
-							name="name"
-							placeholder=""
-							value={formData.name}
-							onChange={handleChange}
-							onFocus={() => setIsFocused(true)}
-							onBlur={(e) => setIsFocused(e.target.value !== '')}
-							required
-						></input>
-						<label
-							htmlFor="name"
-							className="absolute left-0 top-0 inline-block text-sm transition-all duration-500 ease-in-out"
-						>
-							Votre nom *
-						</label>
-					</div>
-					<div className="relative mb-11 lg:mb-16">
-						<input
-							className="w-[95%] border-x-0 border-b border-t-0 border-solid border-darken bg-transparent p-2 text-sm outline-none lg:w-full"
-							type="email"
-							id="email"
-							name="email"
-							placeholder=""
-							value={formData.email}
-							onChange={handleChange}
-							onFocus={() => setIsFocused(true)}
-							onBlur={(e) => setIsFocused(e.target.value !== '')}
-							required
-						></input>
-						<label
-							htmlFor="email"
-							className="absolute left-0 top-0 inline-block text-sm transition-all duration-500 ease-in-out"
-						>
-							Votre email *
-						</label>
-					</div>
-				</div>
-				<div className="w-full lg:w-1/2">
-					<div className="relative mb-11 lg:mb-16">
-						<input
-							className="w-[95%] border-x-0 border-b border-t-0 border-solid border-darken bg-transparent p-2 text-sm outline-none lg:w-full"
-							type="tel"
-							id="phone"
-							name="phone"
-							placeholder=""
-							value={formData.phone}
-							onChange={handleChange}
-							onFocus={() => setIsFocused(true)}
-							onBlur={(e) => setIsFocused(e.target.value !== '')}
-						></input>
-						<label
-							htmlFor="phone"
-							className="absolute left-0 top-0 inline-block text-sm transition-all duration-500 ease-in-out"
-						>
-							Numéro de téléphone
-						</label>
-					</div>
-					<div className="relative mb-11 lg:mb-16">
-						<input
-							className="w-[95%] border-x-0 border-b border-t-0 border-solid border-darken bg-transparent p-2 text-sm outline-none lg:w-full"
-							type="text"
-							id="object"
-							name="object"
-							placeholder=""
-							value={formData.object}
-							onChange={handleChange}
-							onFocus={() => setIsFocused(true)}
-							onBlur={(e) => setIsFocused(e.target.value !== '')}
-							required
-						></input>
-						<label
-							htmlFor="object"
-							className="absolute left-0 top-0 inline-block text-sm transition-all duration-500 ease-in-out"
-						>
-							Objet *
-						</label>
-					</div>
-				</div>
-			</div>
-			<div>
-				<div className="relative mb-11 lg:mb-16">
-					<textarea
-						className="h-40 w-[95%] resize-none border-x-0 border-b border-t-0 border-solid border-darken bg-transparent p-2 text-sm outline-none lg:w-full"
-						id="message"
-						name="message"
+					<Field
+						label="Votre nom *"
+						id="name"
+						name="name"
 						placeholder=""
-						value={formData.message}
-						onChange={handleChange}
+						value={formData.name}
+						handleChange={handleChange}
 						onFocus={() => setIsFocused(true)}
 						onBlur={(e) => setIsFocused(e.target.value !== '')}
 						required
-					></textarea>
-					<label
-						htmlFor="message"
-						className="absolute left-0 top-0 inline-block text-sm transition-all duration-500 ease-in-out"
-					>
-						Message *
-					</label>
+					/>
+					<Field
+						type={FIELD_TYPES.INPUT_EMAIL}
+						label="Votre email *"
+						id="email"
+						name="email"
+						placeholder=""
+						value={formData.email}
+						handleChange={handleChange}
+						onFocus={() => setIsFocused(true)}
+						onBlur={(e) => setIsFocused(e.target.value !== '')}
+						required
+					/>
 				</div>
+				<div className="w-full lg:w-1/2">
+					<Field
+						type={FIELD_TYPES.INPUT_PHONE}
+						label="Numéro de téléphone"
+						id="phone"
+						name="phone"
+						placeholder=""
+						value={formData.phone}
+						handleChange={handleChange}
+						onFocus={() => setIsFocused(true)}
+						onBlur={(e) => setIsFocused(e.target.value !== '')}
+					/>
+					<Field
+						label="Objet *"
+						id="object"
+						name="object"
+						placeholder=""
+						value={formData.object}
+						handleChange={handleChange}
+						onFocus={() => setIsFocused(true)}
+						onBlur={(e) => setIsFocused(e.target.value !== '')}
+						required
+					/>
+				</div>
+			</div>
+			<div className="w-full">
+				<Field
+					type={FIELD_TYPES.TEXTAREA}
+					label="Message *"
+					id="message"
+					name="message"
+					placeholder=""
+					value={formData.message}
+					handleChange={handleChange}
+					onFocus={() => setIsFocused(true)}
+					onBlur={(e) => setIsFocused(e.target.value !== '')}
+					required
+				/>
 				{isSubmitted && (
-					<p className="w-full p-1 text-center my-5 mx-auto text-sm">
+					<p className="mx-auto my-5 w-full p-1 text-center text-sm">
 						Message envoyée avec succés!
 					</p>
 				)}
-				<button
+				<Button
 					type="submit"
+					text="Envoyer"
 					className="cursor-pointer rounded bg-sunny px-4 py-2 text-xs font-medium uppercase text-darken shadow-md transition-all duration-500 hover:-translate-y-1 hover:shadow-xl md:text-sm lg:text-base"
-				>
-					Envoyer
-				</button>
+				/>
 			</div>
 		</form>
 	);

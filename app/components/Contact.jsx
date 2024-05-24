@@ -8,7 +8,7 @@ export default function Contact() {
 			id="contact"
 		>
 			<h2
-				className={`${viaodaLibre.className} flex justify-center p-1 text-3xl lg:text-4xl`}
+				className={`${viaodaLibre.className} p-1 text-center text-3xl lg:text-4xl`}
 			>
 				Me Contacter
 			</h2>

@@ -8,7 +8,7 @@ export default function SocialLinks() {
 			<SocialLinkItem href="https://github.com/N40h" title="GitHub">
 				<FontAwesomeIcon
 					icon={faGithub}
-					className="flex size-6 rounded-50% border border-solid border-darken fill-darken p-2.5 transition-all delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:bg-sunny/30"
+					className="flex size-6 rounded-full border border-solid border-darken fill-darken p-2.5 transition-all delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:bg-sunny"
 				/>
 			</SocialLinkItem>
 			<SocialLinkItem
@@ -17,7 +17,7 @@ export default function SocialLinks() {
 			>
 				<FontAwesomeIcon
 					icon={faLinkedinIn}
-					className="flex size-6 rounded-50% border border-solid border-darken fill-darken p-2.5 transition-all delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:bg-sunny/30"
+					className="flex size-6 rounded-full border border-solid border-darken fill-darken p-2.5 transition-all delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:bg-sunny"
 				/>
 			</SocialLinkItem>
 		</div>

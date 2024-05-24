@@ -1,6 +1,7 @@
 import { faX } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
+import Link from 'next/link';
 import { viaodaLibre } from '../ui/fonts';
 
 export default function Modal({ selectedProject, closeModal }) {
@@ -10,7 +11,7 @@ export default function Modal({ selectedProject, closeModal }) {
 		<>
 			<div className="fixed inset-0 z-100 h-screen w-screen">
 				<div className="fixed inset-0 h-screen w-screen bg-modal-overlay"></div>
-				<div className="absolute left-2/4 top-2/4 max-h-[80vh] w-[90%] xl:w-3/4 min-w-80 -translate-x-1/2 -translate-y-1/2 overflow-auto rounded bg-whity p-4 lg:p-7">
+				<div className="absolute left-2/4 top-2/4 max-h-[80vh] w-[90%] min-w-80 -translate-x-1/2 -translate-y-1/2 overflow-auto rounded bg-whity p-4 lg:p-7 xl:w-3/4">
 					<div className="relative p-4 md:p-6 lg:p-9">
 						<div
 							className="absolute right-0 top-0 cursor-pointer border-none bg-transparent transition-transform duration-300 ease-in-out hover:scale-125"
@@ -57,14 +58,14 @@ export default function Modal({ selectedProject, closeModal }) {
 								</div>
 								<div className="my-4">
 									{selectedProject.url && (
-										<a
+										<Link
 											href={selectedProject.url}
 											title="Lien vers le site"
 											target="_blank"
 											className="rounded-full bg-sunny px-4 py-2 text-sm text-darken shadow-md transition-all duration-500 hover:bg-sunny/70 hover:shadow-xl"
 										>
 											Visiter le site
-										</a>
+										</Link>
 									)}
 								</div>
 							</div>
