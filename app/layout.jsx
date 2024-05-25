@@ -4,6 +4,8 @@ import { numans } from '@/app/ui/fonts';
 import '@/app/ui/globals.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import Script from 'next/script';
 config.autoAddCss = false;
 
@@ -81,7 +83,11 @@ export default function RootLayout({ children }) {
 					freelance. Enchanté de faire votre connaissance et bienvenue
 					sur mon portfolio personnel."
 					/>
-					<main>{children}</main>
+					<main>
+						{children}
+						<Analytics />
+						<SpeedInsights />
+					</main>
 					<Footer copyright="© 2024 Marc Villevieille, All Rights Reserved." />
 				</div>
 			</body>
