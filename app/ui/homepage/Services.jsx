@@ -24,7 +24,7 @@ export default function Services() {
 							/>
 						}
 						title="Développement d'Applications Web"
-						description="Création et développement d'applications web front-end et de sites vitrines. Je transforme vos idées en interfaces utilisateurs réactives et intuitives."
+						description="Création de sites web et développement d'applications avec React. Je transforme vos idées en interfaces utilisateurs réactives et intuitives."
 						tags={[
 							'HTML',
 							'CSS',
@@ -47,7 +47,7 @@ export default function Services() {
 								className="absolute -top-14 rounded-full bg-cherry-blossom p-9 text-4xl"
 							/>
 						}
-						title="SEO"
+						title="Optimisation de sites web"
 						description="Amélioration du référencement naturel de votre site par l'optimisation du contenu, de la structure du site, de l'accessibilité et de la performance."
 						subtitle="Outils utilités"
 						tags={[

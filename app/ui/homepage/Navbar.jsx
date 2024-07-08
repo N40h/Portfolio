@@ -3,7 +3,7 @@ import { faBars, faEnvelope, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
-import Logo from './Logo';
+import Logo from '../Logo';
 import NavItem from './NavItem';
 
 export default function Navbar() {

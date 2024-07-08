@@ -1,4 +1,4 @@
-import { viaodaLibre } from '../ui/fonts';
+import { viaodaLibre } from '../fonts';
 import ProjectList from './ProjectList';
 
 export default function Projects() {
@@ -10,7 +10,7 @@ export default function Projects() {
 			<h2
 				className={`${viaodaLibre.className} p-1 text-center text-3xl lg:text-4xl`}
 			>
-				Réalisations
+				Mes Réalisations
 			</h2>
 			<ProjectList />
 		</section>

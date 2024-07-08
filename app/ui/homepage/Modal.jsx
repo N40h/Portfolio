@@ -2,7 +2,7 @@ import { faX } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import Link from 'next/link';
-import { viaodaLibre } from '../ui/fonts';
+import { viaodaLibre } from '../fonts';
 
 export default function Modal({ selectedProject, closeModal }) {
 	if (!selectedProject) return null;

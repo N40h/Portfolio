@@ -23,7 +23,7 @@ module.exports = {
 				'modal-overlay': 'rgba(49, 49, 49, 0.8)',
 			},
 			backgroundImage: {
-				hero: "url('/img/japanese_temple_with_a_man_standing_in_front_of.webp')",
+				hero: "url('/img/marc_villevieille_developpeur_web_freelance_fourchambault_background.webp')",
 			},
 			backgroundPosition: {
 				'50-70': '50% 70%',

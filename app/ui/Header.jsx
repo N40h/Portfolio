@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import { viaodaLibre } from '@/app/ui/fonts';
-import Navbar from '../components/Navbar';
-import Overlay from '../ui/Overlay';
-import Scroller from '../ui/Scroller';
+import Overlay from './Overlay';
+import Scroller from './Scroller';
+import Navbar from './homepage/Navbar';
 
-export default function Header({ title, description }) {
+export default function Header({ title, description, promesse }) {
 	return (
 		<header className="relative h-screen bg-darken bg-hero bg-cover bg-scroll bg-50-70 bg-no-repeat lg:bg-fixed">
 			<Overlay />
@@ -15,8 +15,11 @@ export default function Header({ title, description }) {
 				>
 					{title}
 				</h1>
-				<p className="ml-4 w-5/6 text-base font-normal leading-5 sm:w-4/5 lg:w-3/5">
+				<p className="ml-4 w-5/6 text-base font-normal leading-5 sm:w-4/5 lg:w-4/5">
 					{description}
+				</p>
+				<p className="ml-4 w-5/6 text-base font-normal leading-5 sm:w-4/5 lg:w-4/5">
+					{promesse}
 				</p>
 			</div>
 			<Scroller />

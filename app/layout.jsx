@@ -1,5 +1,3 @@
-import Footer from '@/app/layout/Footer';
-import Header from '@/app/layout/Header';
 import { numans } from '@/app/ui/fonts';
 import '@/app/ui/globals.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -7,28 +5,33 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Script from 'next/script';
+import Footer from './ui/Footer';
+import Header from './ui/Header';
 config.autoAddCss = false;
 
 export const metadata = {
-	title: 'Marc VILLEVIEILLE - Développeur Front-End',
+	title: 'Marc VILLEVIEILLE | Développeur Web Freelance à Fourchambault | Spécialiste React',
 	description:
-		"Marc VILLEVIEILLE, développeur front-end en freelance. Spécialisé en React pour la création de sites web et d'applications web. Enchanté de faire votre connaissance et bienvenue sur mon portfolio personnel.",
+		"Marc VILLEVIEILLE est un développeur web freelance basé à Fourchambault, spécialisé en React. Découvrez ses projets et compétences en création de sites web et d'applications dynamiques.",
+	keywords:
+		"développeur web freelance, développeur web Fourchambault, spécialiste React, création de sites web, développement d'applications, freelance développeur web",
 	openGraph: {
-		title: 'Marc VILLEVIEILLE - Développeur Front-End en freelance',
+		title: 'Marc VILLEVIEILLE | Développeur Web Freelance à Fourchambault | Spécialiste React',
 		type: 'website',
-		siteName: 'Marc VILLEVIEILLE - Développeur Front-End',
+		siteName:
+			'Marc VILLEVIEILLE | Développeur Web Freelance à Fourchambault | Spécialiste React',
 		url: 'https://marc-villevieille.com',
 		description:
-			"Marc VILLEVIEILLE, développeur front-end en freelance. Spécialisé en React pour la création de sites web et d'applications web. Enchanté de faire votre connaissance et bienvenue sur mon portfolio personnel.",
+			"Marc VILLEVIEILLE est un développeur web freelance basé à Fourchambault, spécialisé en React. Découvrez ses projets et compétences en création de sites web et d'applications dynamiques.",
 		images: 'https://marc-villevieille.com/img/opengraph-image.png',
 	},
 	twitter: {
-		title: 'Marc VILLEVIEILLE - Développeur Front-End',
+		title: 'Marc VILLEVIEILLE | Développeur Web Freelance à Fourchambault | Spécialiste React',
 		cardType: 'summary_large_image',
 		site: '@Naohyo_',
 		url: 'https://marc-villevieille.com',
 		description:
-			"Marc VILLEVIEILLE, développeur front-end en freelance. Spécialisé en React pour la création de sites web et d'applications web. Enchanté de faire votre connaissance et bienvenue sur mon portfolio personnel.",
+			"Marc VILLEVIEILLE est un développeur web freelance basé à Fourchambault, spécialisé en React. Découvrez ses projets et compétences en création de sites web et d'applications dynamiques.",
 		image: 'https://marc-villevieille.com/img/twitter-image.png',
 	},
 };
@@ -39,7 +42,7 @@ const jsonLd = {
 	name: 'Marc VILLEVIEILLE',
 	image: 'https://marc-villevieille.com/img/opengraph-imapge.png',
 	description:
-		"Développeur front-end en freelance. Spécialisé en React pour la création de sites web et d'applications web.",
+		"Marc VILLEVIEILLE est un développeur web freelance basé à Fourchambault, spécialisé en React. Découvrez ses projets et compétences en création de sites web et d'applications dynamiques.",
 	telephone: '+33 6 98 29 20 20',
 	email: 'marc.villevieille.contact@gmail.com',
 	address: {
@@ -79,9 +82,8 @@ export default function RootLayout({ children }) {
 				<div className="m-auto box-border min-h-screen">
 					<Header
 						title="Marc Villevieille"
-						description="Bonjour, je suis Marc Villevieille développeur front-end en
-					freelance. Enchanté de faire votre connaissance et bienvenue
-					sur mon portfolio personnel."
+						description="Développeur Web Freelance à Fourchambault"
+						promesse="Bienvenue sur mon portfolio ! Je suis un développeur web freelance basé à Fourchambault, spécialisé en React. Découvrez mes projets et compétences dans la création de sites web performants et d'applications dynamiques. Je suis prêt à répondre à vos besoins en développement web, en vous offrant des solutions sur mesure et innovantes."
 					/>
 					<main>
 						{children}
