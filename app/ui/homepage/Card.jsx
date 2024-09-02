@@ -21,7 +21,7 @@ export default function Card({ project, index, showMoreClicked, openModal }) {
 				className="absolute inset-0 flex size-full cursor-pointer items-center justify-center rounded bg-sunny/90 opacity-0 transition-opacity delay-100 duration-300 hover:opacity-100"
 				onClick={() => openModal(project)}
 			>
-				<h3 className="text-xl">{`Front-end du site ${project.title}`}</h3>
+				<h3 className="text-center text-xl">{`Front-end du site ${project.title}`}</h3>
 				<div className="absolute bottom-4 right-4">
 					Voir plus <FontAwesomeIcon icon={faArrowRight} />
 				</div>
